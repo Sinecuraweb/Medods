@@ -1,0 +1,39 @@
+// Place all the styles related to the Board controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+a:visited{
+
+	color: #fff !important
+}
+
+// LAZY =D
+
+div.mt-2 a:visited{
+	color:#3280e4 !important
+}
+
+.btn-outline-danger:visited{
+	color: #777 !important
+}
+
+
+
+.btn-outline-danger:visited:hover{
+	color: #fff !important
+}
+
+
+.btn-outline-light:hover{
+	color: #212529 !important
+}
+
+
+.btn-outline-success:visited{
+	color: #28a745 !important
+}
+
+.btn-outline-success:visited:hover{
+	color: #fff !important;
+}

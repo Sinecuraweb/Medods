@@ -1,0 +1,60 @@
+
+<div class="auth">
+  <div class="auth__header">
+    <div class="auth__logo">
+      <img alt="Icon" src="/assets/logo2.png" height="90" />
+    </div>
+  </div>
+  <div class="auth__body">
+
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "auth__form" } ) do |f| %>
+
+
+    <div class="auth__form_body">
+      <h3 class="auth__form_title">Авторизуйтесь:</h3>
+      <div>
+
+        <div class="form-group">
+          <%= f.label :email, :class => 'text-uppercase small' %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" , :class => 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :пароль, :class => 'text-uppercase small' %><br />
+          <%= f.password_field :password, autocomplete: "current-password" , :class => 'form-control'%>
+        </div>
+
+        <% if devise_mapping.rememberable? -%>
+        <div class="field">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+        <% end %>
+
+
+      </div>
+    </div>
+
+    <div class="auth__form_actions">
+      <%= f.submit "Войти", :class => 'btn btn-primary btn-lg btn-block' %>
+      <div class="mt-2">
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
+
+  
+
+  <% end %>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+

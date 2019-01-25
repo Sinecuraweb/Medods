@@ -1,0 +1,28 @@
+<h1> Расширенный поиск объявлений</h1>
+
+<%= form_for @search, html: {class: "pure-form"} do |s| %>
+
+	<div class="field">
+		<%= s.label :keywords %> <br>
+		<%= s.text_field :keywords %> <br>
+	</div>
+
+	<div class="field">
+		<%= s.label :tag %> <br>
+		<%= s.select :tag, options_for_select(@tags), :include_blank => true %> <br>
+	</div>
+
+
+	
+	<div class="field">
+		<%= s.label :author %> <br>
+		<%= s.text_field :author %> <br>
+	</div>
+
+ 	<div class="actions">
+ 		<%= s.submit "Найти ! !" , class: "btn btn-outline-warning" %>
+ 	</div>
+
+ <% end %>
+
+ <p> <%= link_to 'Назад', board_path(1) %> </p>

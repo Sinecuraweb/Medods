@@ -1,0 +1,20 @@
+<h1 class="text-center mb-5 mt-3  text-uppercase"> Доска объявлений</h1>
+
+<% @board.each do |board| %>
+
+	<div class="well">
+		
+
+		<h3><%= board.title %></h3>
+
+		<p><%= board.body %></p>
+
+		<%= link_to "Смотреть целиком", post_path(board), :class => 'btn btn-info' %>
+
+	</div>
+<% end %>
+
+
+
+
+

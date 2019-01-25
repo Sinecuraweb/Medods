@@ -1,0 +1,52 @@
+<div class="auth">
+  <div class="auth__header">
+    <div class="auth__logo">
+      <img alt="Icon" src="/assets/logo2.png" height="90" />
+    </div>
+  </div>
+  <div class="auth__body">
+
+
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: {method: :post,  class: "auth__form" } ) do |f| %>
+
+  <%= devise_error_messages! %>
+
+
+    <div class="auth__form_body">
+      <h3 class="auth__form_title">Восстановить пароль</h3>
+      <div>
+
+        <div class="form-group">
+          <%= f.label :email, :class => 'text-uppercase small' %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" , :class => 'form-control'%>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="auth__form_actions">
+      <%= f.submit "Отправить инструкции", :class => 'btn btn-primary btn-lg btn-block' %>
+
+      <div class="mt-2">
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
+
+  
+
+  <% end %>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+

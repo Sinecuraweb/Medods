@@ -1,0 +1,10 @@
+<h2 class="text-secondary mt-4 mb-3">Отредактируйте ваше объявление :</h2>
+
+<%= render 'form', board: @board %>
+
+
+<div class="mt-5">
+	<%= link_to 'Вернуться к объявлению (не сохр)', @board, :class => 'btn btn-primary' %> 
+	<%= link_to 'Все объявления', boards_path, :class => 'btn btn-primary' %>
+</div>
+

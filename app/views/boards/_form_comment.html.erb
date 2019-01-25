@@ -1,0 +1,27 @@
+<%= form_for([@board, @board.comments.build]) do |f| %>
+
+
+
+
+    <%= form.label :Пользователь %>
+    <%= form.text_field :username, {:class => 'form-control'} %>
+
+
+
+    <%= form.label :Комментарий %>
+    <%= form.text_area :body, {:class => 'form-control' , :rows => '15'}  %>
+
+    <!-- start pic -->
+
+  
+
+
+
+
+
+
+
+
+    <%= form.submit("Отправить", {:class => 'btn btn-warning mt-4'}) %>
+
+<% end %>

@@ -1,0 +1,24 @@
+<h1> Вот что удалось найти : </h1>
+
+<p> <%= link_to 'Back', new_search_path %> </p>
+
+<% if @search.search_boards.empty? %>
+<p> Вы ничего не нашли, попробуйте еще </p>
+
+<% else %>
+
+	<% @search.search_boards.each do |c| %>
+	<br>
+
+	<div class="">
+		
+		<h1><%= c.title %> </h1>
+		<p><strong>Автор :  </strong> <%= c.authbor %> </p>
+		<p><strong> TAG -) :  </strong> <%= c.tag %></p>
+
+	</div>
+	<% end %>
+
+<% end %>
+
+

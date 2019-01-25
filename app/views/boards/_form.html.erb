@@ -1,0 +1,82 @@
+<%= form_with(model: board, local: true) do |form| %>
+<% if board.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(board.errors.count, "error") %> prohibited this board from being saved:</h2>
+
+  <ul>
+    <% board.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+
+
+<%= form.label :Название %>
+<%= form.text_field :title, {:class => 'form-control'} %>
+
+
+
+<%= form.label :Описание %>
+<%= form.text_area :body, {:class => 'form-control' , :rows => '15'}  %>
+
+
+<!-- start mini baj(tag) -->
+  <%#= form.select :tag, options_for_select(@tags), :include_blank => true %>
+  <%# collection_select( :tag, :tag_id, Board.all, :id, :name, {}) %>
+
+
+
+<!-- end tags -->
+
+<div class="input-group mb-3 mt-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+    <select name="user_id">
+      <%#= @users.each do |user| ?!?!? %> 
+      <%= User.all.each do |user| %>
+        <option value="<%= user.name %>"><%= user.name %></option>
+      <% end %>
+    </select>
+
+
+
+
+
+
+<div class="form-group">
+  <%= form.label :all_tags %>
+  <%= form.text_field :all_tags, class: 'form-control' %>
+</div>
+
+<!-- start pic -->
+<div class="input-group mb-3 mt-4">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroupFileAddon01">Выберите фото</span>
+  </div>
+  <div class="custom-file">
+    <%= form.file_field :picture, :class => 'custom-file-input' %>
+    <label class="custom-file-label" for="inputGroupFile01">Загрузить</label>
+  </div>
+</div>
+<!-- end pic -->
+
+
+
+
+
+
+
+<%= form.submit("Применить изменения", {:class => 'btn btn-success mt-4'}) %>
+
+<% end %>
