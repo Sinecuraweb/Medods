@@ -20685,3 +20685,1999 @@ app/views/boards/index.html.erb:38:in `block (2 levels) in _app_views_boards_ind
 app/views/boards/index.html.erb:38:in `map'
 app/views/boards/index.html.erb:38:in `block in _app_views_boards_index_html_erb___3225038387808482826_70063779747340'
 app/views/boards/index.html.erb:6:in `_app_views_boards_index_html_erb___3225038387808482826_70063779747340'
+Started GET "/" for 127.0.0.1 at 2019-01-26 22:26:16 +0500
+  
+PG::ConnectionBad (could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg-1.1.4-x64 (mingw32) lib/pg.rb:56:in `initialize'
+pg-1.1.4-x64 (mingw32) lib/pg.rb:56:in `new'
+pg-1.1.4-x64 (mingw32) lib/pg.rb:56:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-26 23:18:13 +0500
+  
+PG::ConnectionBad (could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg-1.1.4-x64 (mingw32) lib/pg.rb:56:in `initialize'
+pg-1.1.4-x64 (mingw32) lib/pg.rb:56:in `new'
+pg-1.1.4-x64 (mingw32) lib/pg.rb:56:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-26 23:30:31 +0500
+  
+PG::ConnectionBad (could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg-1.1.4-x64 (mingw32) lib/pg.rb:56:in `initialize'
+pg-1.1.4-x64 (mingw32) lib/pg.rb:56:in `new'
+pg-1.1.4-x64 (mingw32) lib/pg.rb:56:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-26 23:48:07 +0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  role "egor" does not exist
+):
+  
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-27 12:18:48 +0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  role "egor" does not exist
+):
+  
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-27 12:18:51 +0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  role "egor" does not exist
+):
+  
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-27 12:48:49 +0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  role "egor" does not exist
+):
+  
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-27 12:48:52 +0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  role "egor" does not exist
+):
+  
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-27 12:52:29 +0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  role "egor" does not exist
+):
+  
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-27 12:55:28 +0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  role "egor" does not exist
+):
+  
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-27 12:57:29 +0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  role "egor" does not exist
+):
+  
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE DATABASE "project_development" ENCODING = 'unicode'[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (3226.5ms)[0m  [1m[35mCREATE DATABASE "project_development" ENCODING = 'unicode'[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (1887.1ms)[0m  [1m[35mCREATE DATABASE "project_test" ENCODING = 'unicode'[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (33.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (19.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(279088437195799245)[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to CreatePosts (20190121110341)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (22.4ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "body" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190121110341_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190121110341"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to CreateBoards (20190122064857)
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (23.2ms)[0m  [1m[35mCREATE TABLE "boards" ("id" bigserial primary key, "title" character varying, "body" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190122064857_create_boards.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190122064857"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to AddPictureToBoards (20190123055629)
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "boards" ADD "picture" character varying[0m
+  ↳ db/migrate/20190123055629_add_picture_to_boards.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190123055629"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to DeviseCreateUsers (20190123103745)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (21.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190123103745_devise_create_users.rb:5
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20190123103745_devise_create_users.rb:39
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20190123103745_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190123103745"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to CreateComments (20190124064636)
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (23.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "username" character varying, "body" text, "board_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_9510ce0f70"
+FOREIGN KEY ("board_id")
+  REFERENCES "boards" ("id")
+)[0m
+  ↳ db/migrate/20190124064636_create_comments.rb:3
+  [1m[35m (16.2ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_board_id" ON "comments"  ("board_id")[0m
+  ↳ db/migrate/20190124064636_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190124064636"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to AddUserIdToBoard (20190124082916)
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "boards" ADD "user_id" integer[0m
+  ↳ db/migrate/20190124082916_add_user_id_to_board.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190124082916"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to AddNamePhoneToUsers (20190124113005)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "name" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20190124113005_add_name_phone_to_users.rb:4
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "phone" character varying[0m
+  ↳ db/migrate/20190124113005_add_name_phone_to_users.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190124113005"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to CreateSearches (20190125053021)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (21.2ms)[0m  [1m[35mCREATE TABLE "searches" ("id" bigserial primary key, "keywords" character varying, "tag" character varying, "author" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190125053021_create_searches.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190125053021"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to CreateTags (20190125112717)
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (20.2ms)[0m  [1m[35mCREATE TABLE "tags" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190125112717_create_tags.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190125112717"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Migrating to CreateTaggings (20190125112901)
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "taggings" ("id" bigserial primary key, "board_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_bd607bfba1"
+FOREIGN KEY ("board_id")
+  REFERENCES "boards" ("id")
+, CONSTRAINT "fk_rails_9fcd2e236b"
+FOREIGN KEY ("tag_id")
+  REFERENCES "tags" ("id")
+)[0m
+  ↳ db/migrate/20190125112901_create_taggings.rb:3
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE  INDEX  "index_taggings_on_board_id" ON "taggings"  ("board_id")[0m
+  ↳ db/migrate/20190125112901_create_taggings.rb:3
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE  INDEX  "index_taggings_on_tag_id" ON "taggings"  ("tag_id")[0m
+  ↳ db/migrate/20190125112901_create_taggings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190125112901"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-01-27 08:37:22.826496"], ["updated_at", "2019-01-27 08:37:22.826496"]]
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(279088437195799245)[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-01-27 13:37:56 +0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.9ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  Rendered boards/index.html.erb within layouts/application (29.8ms)
+Started GET "/" for 127.0.0.1 at 2019-01-27 13:37:58 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (7.7ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  Rendered boards/index.html.erb within layouts/application (23.6ms)
+Completed 500 Internal Server Error in 2983ms (ActiveRecord: 5.5ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (C:/DEV/medods/Medods/tmp/cache/assets/sprockets/v3.0/bU/bUhzqslA07Cw6vVd8nH-bAEvTC3alfsq-x__1C_rWCo.cache.63821680.12808.42555, C:/DEV/medods/Medods/tmp/cache/assets/sprockets/v3.0/bU/bUhzqslA07Cw6vVd8nH-bAEvTC3alfsq-x__1C_rWCo.cache)):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9: 
+    10:     <!-- bootstrap css -->
+    11:     <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' %>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__399856458_70646600'
+Completed 200 OK in 18659ms (Views: 18607.0ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2019-01-27 13:38:27 +0500
+Processing by BoardsController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/boards_controller.rb:22
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/boards/_form.html.erb:47
+  Rendered boards/_form.html.erb (327.2ms)
+  Rendered boards/new.html.erb within layouts/application (409.3ms)
+Completed 200 OK in 741ms (Views: 669.9ms | ActiveRecord: 13.9ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2019-01-27 13:39:08 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EAaFOEWIezQ80+p9bDMcLXikPVlF8k1/YoTzMyINabheYNoX9ZqDXPkg37JQyqUp03ShvBekO99KdZCPimr1CQ==", "board"=>{"title"=>"123123", "body"=>"towietojto", "all_tags"=>"124124124, 123124", "picture"=>#<ActionDispatch::Http::UploadedFile:0x000000000ffd0480 @tempfile=#<Tempfile:C:/Users/egor/AppData/Local/Temp/RackMultipart20190127-12808-1fn93d6.mp4>, @original_filename="2_5454117405129179840.mp4", @content_type="video/mp4", @headers="Content-Disposition: form-data; name=\"board[picture]\"; filename=\"2_5454117405129179840.mp4\"\r\nContent-Type: video/mp4\r\n">}, "commit"=>"Применить изменения"}
+  [1m[36mTag Load (1.7ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 ORDER BY "tags"."id" ASC LIMIT $2[0m  [["name", "124124124"], ["LIMIT", 1]]
+  ↳ app/models/board.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/board.rb:28
+  [1m[36mTag Create (1.7ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "124124124"], ["created_at", "2019-01-27 08:39:08.987590"], ["updated_at", "2019-01-27 08:39:08.987590"]]
+  ↳ app/models/board.rb:28
+  [1m[35m (46.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/board.rb:28
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 ORDER BY "tags"."id" ASC LIMIT $2[0m  [["name", "123124"], ["LIMIT", 1]]
+  ↳ app/models/board.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/board.rb:28
+  [1m[36mTag Create (0.4ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "123124"], ["created_at", "2019-01-27 08:39:09.048126"], ["updated_at", "2019-01-27 08:39:09.048126"]]
+  ↳ app/models/board.rb:28
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/board.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:40
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/boards_controller.rb:40
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/boards/_form.html.erb:47
+  Rendered boards/_form.html.erb (9.3ms)
+  Rendered boards/new.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 564ms (Views: 308.6ms | ActiveRecord: 62.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-27 13:39:12 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (145.1ms)
+Completed 200 OK in 632ms (Views: 604.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-01-27 13:39:17 +0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.4ms)
+  Rendered users/registrations/new.html.erb within layouts/application (104.2ms)
+Completed 200 OK in 591ms (Views: 589.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-01-27 13:39:34 +0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FCKVMv9K/cZMF4ustrVrhGUbvcEeVOcmMpbqFuvAPO3fVQn9cXTvnyFfnGRU7P3YPc+wbYxceH8gu63Ze7vLjA==", "user"=>{"email"=>"sinecura92@mail.ru", "name"=>"E", "phone"=>"123213", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sinecura92@mail.ru"], ["LIMIT", 1]]
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name", "phone") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sinecura92@mail.ru"], ["encrypted_password", "$2a$11$MunEqHShERFk9WEYKi032OvPy0NleX4kzg4g2YzGiaA.vmqwc5HwK"], ["created_at", "2019-01-27 08:39:34.797131"], ["updated_at", "2019-01-27 08:39:34.797131"], ["name", "E"], ["phone", "123213"]]
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 662ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-27 13:39:35 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  Rendered boards/index.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 200 OK in 366ms (Views: 329.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2019-01-27 13:39:38 +0500
+Processing by BoardsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/boards_controller.rb:22
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/boards/_form.html.erb:47
+  Rendered boards/_form.html.erb (6.8ms)
+  Rendered boards/new.html.erb within layouts/application (41.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 200 OK in 341ms (Views: 300.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/boards" for 127.0.0.1 at 2019-01-27 13:40:11 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wakc6DbuV7Mwd2OgYrOAT/Crh9ojzlwrlPx5sPbo0B8Xz0PHhvyv2/WEVm9eSjlLW3sbP3GYKou8DRoMXo9Mrg==", "board"=>{"title"=>"Объявление №1", "body"=>"узщкагцущшкггщшуцко", "all_tags"=>"123, 12378", "picture"=>#<ActionDispatch::Http::UploadedFile:0x000000000f127708 @tempfile=#<Tempfile:C:/Users/egor/AppData/Local/Temp/RackMultipart20190127-12808-cehhvw.png>, @original_filename="kolodcy.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"board[picture]\"; filename=\"kolodcy.png\"\r\nContent-Type: image/png\r\n">}, "user_id"=>"E", "commit"=>"Применить изменения"}
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 ORDER BY "tags"."id" ASC LIMIT $2[0m  [["name", "123"], ["LIMIT", 1]]
+  ↳ app/models/board.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/board.rb:28
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "123"], ["created_at", "2019-01-27 08:40:11.467589"], ["updated_at", "2019-01-27 08:40:11.467589"]]
+  ↳ app/models/board.rb:28
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/board.rb:28
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 ORDER BY "tags"."id" ASC LIMIT $2[0m  [["name", "12378"], ["LIMIT", 1]]
+  ↳ app/models/board.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/board.rb:28
+  [1m[36mTag Create (0.4ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "12378"], ["created_at", "2019-01-27 08:40:11.486928"], ["updated_at", "2019-01-27 08:40:11.486928"]]
+  ↳ app/models/board.rb:28
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/board.rb:28
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:37
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:40
+  [1m[36mBoard Create (1.9ms)[0m  [1m[32mINSERT INTO "boards" ("title", "body", "created_at", "updated_at", "picture", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Объявление №1"], ["body", "узщкагцущшкггщшуцко"], ["created_at", "2019-01-27 08:40:11.511369"], ["updated_at", "2019-01-27 08:40:11.511369"], ["picture", "kolodcy.png"], ["user_id", 1]]
+  ↳ app/controllers/boards_controller.rb:40
+  [1m[36mTagging Create (3.2ms)[0m  [1m[32mINSERT INTO "taggings" ("board_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board_id", 1], ["tag_id", 3], ["created_at", "2019-01-27 08:40:11.518883"], ["updated_at", "2019-01-27 08:40:11.518883"]]
+  ↳ app/controllers/boards_controller.rb:40
+  [1m[36mTagging Create (0.8ms)[0m  [1m[32mINSERT INTO "taggings" ("board_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["board_id", 1], ["tag_id", 4], ["created_at", "2019-01-27 08:40:11.526586"], ["updated_at", "2019-01-27 08:40:11.526586"]]
+  ↳ app/controllers/boards_controller.rb:40
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/boards_controller.rb:40
+Redirected to http://localhost:3000/boards/1
+Completed 302 Found in 107ms (ActiveRecord: 16.0ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at 2019-01-27 13:40:11 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:76
+  Rendering boards/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/show.html.erb:52
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/show.html.erb:59
+  Rendered boards/show.html.erb within layouts/application (146.7ms)
+Completed 200 OK in 482ms (Views: 398.6ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/boards/1/comments" for 127.0.0.1 at 2019-01-27 13:40:25 +0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P2RACrSB2bAPglfcLIoFRVZKRjU625/t52sGawNHPBCWeW1ZL73JAm+N/3DSEAcBTvrOfoKewlRW0iKSDQRdmg==", "comment"=>{"username"=>"123123", "body"=>"1243123"}, "commit"=>"Отправить", "board_id"=>"1"}
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[36mComment Create (1.8ms)[0m  [1m[32mINSERT INTO "comments" ("username", "body", "board_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "123123"], ["body", "1243123"], ["board_id", 1], ["created_at", "2019-01-27 08:40:25.278536"], ["updated_at", "2019-01-27 08:40:25.278536"]]
+  ↳ app/controllers/comments_controller.rb:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:4
+Redirected to http://localhost:3000/boards/1
+Completed 302 Found in 24ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/boards/1" for 127.0.0.1 at 2019-01-27 13:40:25 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:76
+  Rendering boards/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/boards/show.html.erb:52
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/show.html.erb:59
+  Rendered boards/show.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 324ms (Views: 283.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-27 13:40:29 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (44.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 200 OK in 329ms (Views: 294.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-27 13:40:36 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (11.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 200 OK in 286ms (Views: 250.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/tags/12378" for 127.0.0.1 at 2019-01-27 13:40:38 +0500
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"12378"}
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 LIMIT $2[0m  [["name", "12378"], ["LIMIT", 1]]
+  ↳ app/controllers/tags_controller.rb:3
+Completed 406 Not Acceptable in 5415ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::UnknownFormat (TagsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.2) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/tags/123" for 127.0.0.1 at 2019-01-27 13:40:43 +0500
+Started GET "/tags/123" for 127.0.0.1 at 2019-01-27 13:40:43 +0500
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mTag Load (23.8ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 LIMIT $2[0m  [["name", "123"], ["LIMIT", 1]]
+  ↳ app/controllers/tags_controller.rb:3
+Completed 406 Not Acceptable in 5640ms (ActiveRecord: 28.8ms)
+
+
+  
+ActionController::UnknownFormat (TagsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.2) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mTag Load (2.4ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 LIMIT $2[0m  [["name", "123"], ["LIMIT", 1]]
+  ↳ app/controllers/tags_controller.rb:3
+Completed 406 Not Acceptable in 5440ms (ActiveRecord: 8.4ms)
+
+
+  
+ActionController::UnknownFormat (TagsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.2) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-27 13:50:45 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (1.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (22.1ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 200 OK in 312ms (Views: 262.6ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/profile/index" for 127.0.0.1 at 2019-01-27 13:50:51 +0500
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/profile/index.html.erb:8
+  Rendered profile/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 299ms (Views: 252.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-27 15:34:16 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (26.1ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (38.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (247.6ms)
+Completed 200 OK in 1356ms (Views: 1055.2ms | ActiveRecord: 167.8ms)
+
+
+Started GET "/tags/123" for 127.0.0.1 at 2019-01-27 15:34:21 +0500
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 LIMIT $2[0m  [["name", "123"], ["LIMIT", 1]]
+  ↳ app/controllers/tags_controller.rb:3
+  Rendering tags/show.html.erb within layouts/application
+  [1m[36mBoard Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "boards" INNER JOIN "taggings" ON "boards"."id" = "taggings"."board_id" WHERE "taggings"."tag_id" = $1 LIMIT $2[0m  [["tag_id", 3], ["LIMIT", 1]]
+  ↳ app/views/tags/show.html.erb:3
+  Rendered tags/show.html.erb within layouts/application (48.5ms)
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `bords' for #<Tag:0x000000000f9e8838>
+Did you mean?  boards
+               boards=):
+    3: <% if @tag.boards.empty? %>
+    4: <h2> Объявление к тегу не найдено</h2>
+    5: <% else %>
+    6: 	<%= render @tag.bords %>
+    7: 
+    8: <% end %>
+  
+app/views/tags/show.html.erb:6:in `_app_views_tags_show_html_erb__923744063_130938520'
+Started GET "/tags/123" for 127.0.0.1 at 2019-01-27 15:34:42 +0500
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 LIMIT $2[0m  [["name", "123"], ["LIMIT", 1]]
+  ↳ app/controllers/tags_controller.rb:3
+  Rendering tags/show.html.erb within layouts/application
+  [1m[36mBoard Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "boards" INNER JOIN "taggings" ON "boards"."id" = "taggings"."board_id" WHERE "taggings"."tag_id" = $1 LIMIT $2[0m  [["tag_id", 3], ["LIMIT", 1]]
+  ↳ app/views/tags/show.html.erb:3
+  Rendered tags/show.html.erb within layouts/application (48.5ms)
+Completed 500 Internal Server Error in 313ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `bords' for nil:NilClass):
+    3: <% if @tag.boards.empty? %>
+    4: <h2> Объявление к тегу не найдено</h2>
+    5: <% else %>
+    6: 	<%= render @tags.bords %>
+    7: 
+    8: <% end %>
+  
+app/views/tags/show.html.erb:6:in `_app_views_tags_show_html_erb__923744063_121652320'
+Started GET "/tags/123" for 127.0.0.1 at 2019-01-27 15:34:59 +0500
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 LIMIT $2[0m  [["name", "123"], ["LIMIT", 1]]
+  ↳ app/controllers/tags_controller.rb:3
+  Rendering tags/show.html.erb within layouts/application
+  [1m[36mBoard Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "boards" INNER JOIN "taggings" ON "boards"."id" = "taggings"."board_id" WHERE "taggings"."tag_id" = $1 LIMIT $2[0m  [["tag_id", 3], ["LIMIT", 1]]
+  ↳ app/views/tags/show.html.erb:3
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT "boards".* FROM "boards" INNER JOIN "taggings" ON "boards"."id" = "taggings"."board_id" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 3]]
+  ↳ app/views/tags/show.html.erb:6
+  Rendered tags/show.html.erb within layouts/application (132.2ms)
+Completed 500 Internal Server Error in 354ms (ActiveRecord: 2.3ms)
+
+
+  
+ActionView::Template::Error (Missing partial boards/_board with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/DEV/medods/Medods/app/views"
+  * "C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/devise-4.5.0/app/views"
+):
+    3: <% if @tag.boards.empty? %>
+    4: <h2> Объявление к тегу не найдено</h2>
+    5: <% else %>
+    6: 	<%= render @tag.boards %>
+    7: 
+    8: <% end %>
+  
+app/views/tags/show.html.erb:6:in `_app_views_tags_show_html_erb__923744063_133669420'
+Started GET "/tags" for 127.0.0.1 at 2019-01-27 15:39:01 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/tags"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-27 15:39:13 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 295ms (Views: 253.4ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-27 15:39:33 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 291ms (Views: 256.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/tags/12378" for 127.0.0.1 at 2019-01-27 15:39:35 +0500
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"12378"}
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 LIMIT $2[0m  [["name", "12378"], ["LIMIT", 1]]
+  ↳ app/controllers/tags_controller.rb:3
+  Rendering tags/show.html.erb within layouts/application
+  [1m[36mBoard Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "boards" INNER JOIN "taggings" ON "boards"."id" = "taggings"."board_id" WHERE "taggings"."tag_id" = $1 LIMIT $2[0m  [["tag_id", 4], ["LIMIT", 1]]
+  ↳ app/views/tags/show.html.erb:3
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT "boards".* FROM "boards" INNER JOIN "taggings" ON "boards"."id" = "taggings"."board_id" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 4]]
+  ↳ app/views/tags/show.html.erb:6
+  Rendered tags/show.html.erb within layouts/application (121.8ms)
+Completed 500 Internal Server Error in 302ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionView::Template::Error (Missing partial boards/_board with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/DEV/medods/Medods/app/views"
+  * "C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/devise-4.5.0/app/views"
+):
+    3: <% if @tag.boards.empty? %>
+    4: <h2> Объявление к тегу не найдено</h2>
+    5: <% else %>
+    6: 	<%= render @tag.boards %>
+    7: 
+    8: <% end %>
+  
+app/views/tags/show.html.erb:6:in `_app_views_tags_show_html_erb__923744063_129574040'
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-27 15:39:44 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (1339.0ms)
+Completed 200 OK in 5579ms (Views: 5573.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-27 15:40:01 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zxOV5XsRCaQ7n/ExNQFltq6D0dXUh3cgpyGtzZG4HRKPvAierj5F8zS6UD1luxmasssxLabDsOvHliPLPfz67w==", "user"=>{"email"=>"sinecura92@mail.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[36mUser Load (50.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "sinecura92@mail.ru"], ["LIMIT", 1]]
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 626ms (ActiveRecord: 53.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-27 15:40:01 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (11.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 200 OK in 308ms (Views: 272.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/tags/123" for 127.0.0.1 at 2019-01-27 15:40:05 +0500
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"123"}
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = $1 LIMIT $2[0m  [["name", "123"], ["LIMIT", 1]]
+  ↳ app/controllers/tags_controller.rb:3
+  Rendering tags/show.html.erb within layouts/application
+  [1m[36mBoard Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "boards" INNER JOIN "taggings" ON "boards"."id" = "taggings"."board_id" WHERE "taggings"."tag_id" = $1 LIMIT $2[0m  [["tag_id", 3], ["LIMIT", 1]]
+  ↳ app/views/tags/show.html.erb:3
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT "boards".* FROM "boards" INNER JOIN "taggings" ON "boards"."id" = "taggings"."board_id" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 3]]
+  ↳ app/views/tags/show.html.erb:6
+  Rendered tags/show.html.erb within layouts/application (119.5ms)
+Completed 500 Internal Server Error in 310ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionView::Template::Error (Missing partial boards/_board with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/DEV/medods/Medods/app/views"
+  * "C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/devise-4.5.0/app/views"
+):
+    3: <% if @tag.boards.empty? %>
+    4: <h2> Объявление к тегу не найдено</h2>
+    5: <% else %>
+    6: 	<%= render @tag.boards %>
+    7: 
+    8: <% end %>
+  
+app/views/tags/show.html.erb:6:in `_app_views_tags_show_html_erb__923744063_127440140'
+Started PUT "/__web_console/repl_sessions/4e85faed5e8b2bb5e787c7d32d7a12ce" for 127.0.0.1 at 2019-01-27 15:40:46 +0500
+Started PUT "/__web_console/repl_sessions/4e85faed5e8b2bb5e787c7d32d7a12ce" for 127.0.0.1 at 2019-01-27 15:40:48 +0500
+Started PUT "/__web_console/repl_sessions/4e85faed5e8b2bb5e787c7d32d7a12ce" for 127.0.0.1 at 2019-01-27 15:40:49 +0500
+Started PUT "/__web_console/repl_sessions/4e85faed5e8b2bb5e787c7d32d7a12ce" for 127.0.0.1 at 2019-01-27 15:40:51 +0500
+Started GET "/" for 127.0.0.1 at 2019-01-27 15:58:47 +0500
+  
+SyntaxError (C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/boards_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-27 15:59:16 +0500
+  
+SyntaxError (C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/boards_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-27 15:59:32 +0500
+  
+SyntaxError (C:/DEV/medods/Medods/app/helpers/board_helper.rb:8: unterminated regexp meets end of file
+C:/DEV/medods/Medods/app/helpers/board_helper.rb:8: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/board_helper.rb:8: unterminated regexp meets end of file
+app/helpers/board_helper.rb:8: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/boards_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:00:57 +0500
+  
+SyntaxError (C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/boards_controller.rb:1:in `<top (required)>'
+Started GET "/boards" for 127.0.0.1 at 2019-01-27 16:03:56 +0500
+  
+SyntaxError (C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/boards_controller.rb:1:in `<top (required)>'
+Started GET "/boards" for 127.0.0.1 at 2019-01-27 16:05:00 +0500
+  
+SyntaxError (C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/boards_controller.rb:1:in `<top (required)>'
+Started GET "/boards" for 127.0.0.1 at 2019-01-27 16:05:29 +0500
+  
+SyntaxError (C:/DEV/medods/Medods/app/helpers/board_helper.rb:8: unterminated regexp meets end of file
+C:/DEV/medods/Medods/app/helpers/board_helper.rb:8: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/board_helper.rb:8: unterminated regexp meets end of file
+app/helpers/board_helper.rb:8: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/boards_controller.rb:1:in `<top (required)>'
+Started GET "/boards" for 127.0.0.1 at 2019-01-27 16:06:20 +0500
+  [1m[35m (11.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/boards_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:11:29 +0500
+  
+SyntaxError (C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/boards_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:12:03 +0500
+  
+ActionController::RoutingError (Couldn't find BoardHelper, expected it to be defined in helpers/board_helper.rb):
+  
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/boards_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:12:32 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (19.6ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (38.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (286.9ms)
+  [1m[36mUser Load (31.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 500 Internal Server Error in 3000ms (ActiveRecord: 130.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `tag_cloud' for #<#<Class:0x000000000d110640>:0x000000000d10a998>
+Did you mean?  tag_url):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_73658440'
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:14:05 +0500
+  
+SyntaxError (C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+C:/DEV/medods/Medods/app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/board_helper.rb:9: unterminated regexp meets end of file
+app/helpers/board_helper.rb:9: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/boards_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:14:24 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (56.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+  [1m[36mTag Load (8.1ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY taggings.tag_id[0m
+  ↳ app/helpers/board_helper.rb:3
+Completed 500 Internal Server Error in 476ms (ActiveRecord: 31.1ms)
+
+
+  
+ActionView::Template::Error (PG::GroupingError: ERROR:  column "tags.name" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT name, count(taggings.tag_id) as count FROM "tags" INN...
+               ^
+: SELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY taggings.tag_id):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/helpers/board_helper.rb:3:in `sort_by'
+app/helpers/board_helper.rb:3:in `tag_cloud'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_126240200'
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:15:33 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (51.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+  [1m[36mTag Load (1.3ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY taggings.tag_id[0m
+  ↳ app/helpers/boards_helper.rb:3
+Completed 500 Internal Server Error in 421ms (ActiveRecord: 21.2ms)
+
+
+  
+ActionView::Template::Error (PG::GroupingError: ERROR:  column "tags.name" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT name, count(taggings.tag_id) as count FROM "tags" INN...
+               ^
+: SELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY taggings.tag_id):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/helpers/boards_helper.rb:3:in `sort_by'
+app/helpers/boards_helper.rb:3:in `tag_cloud'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_123860720'
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:19:26 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (53.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+  [1m[36mTag Load (1.3ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY taggings.tag_id[0m
+  ↳ app/helpers/boards_helper.rb:3
+Completed 500 Internal Server Error in 448ms (ActiveRecord: 22.5ms)
+
+
+  
+ActionView::Template::Error (PG::GroupingError: ERROR:  column "tags.name" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT name, count(taggings.tag_id) as count FROM "tags" INN...
+               ^
+: SELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY taggings.tag_id):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/helpers/boards_helper.rb:3:in `sort_by'
+app/helpers/boards_helper.rb:3:in `tag_cloud'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_118157360'
+Started GET "/boards" for 127.0.0.1 at 2019-01-27 16:20:11 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (13.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+  [1m[36mTag Load (1.4ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY taggings.tag_id[0m
+  ↳ app/helpers/boards_helper.rb:3
+Completed 500 Internal Server Error in 365ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (PG::GroupingError: ERROR:  column "tags.name" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT name, count(taggings.tag_id) as count FROM "tags" INN...
+               ^
+: SELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY taggings.tag_id):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/helpers/boards_helper.rb:3:in `sort_by'
+app/helpers/boards_helper.rb:3:in `tag_cloud'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_70248120'
+Started GET "/boards" for 127.0.0.1 at 2019-01-27 16:23:53 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (14.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+  [1m[36mTag Load (1.2ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY taggings.tag_id[0m
+  ↳ app/helpers/boards_helper.rb:3
+Completed 500 Internal Server Error in 376ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionView::Template::Error (PG::GroupingError: ERROR:  column "tags.name" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT name, count(taggings.tag_id) as count FROM "tags" INN...
+               ^
+: SELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY taggings.tag_id):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/helpers/boards_helper.rb:3:in `sort_by'
+app/helpers/boards_helper.rb:3:in `tag_cloud'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_57350820'
+Started GET "/boards" for 127.0.0.1 at 2019-01-27 16:47:52 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (13.6ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (26.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (221.9ms)
+  [1m[36mUser Load (25.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 500 Internal Server Error in 622ms (ActiveRecord: 212.1ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/models/tag.rb:7:in `group_by'
+app/models/tag.rb:7:in `counts'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_133848500'
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:47:54 +0500
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:47:58 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (67.7ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+Processing by BoardsController#index as HTML
+  [1m[36mTag Load (187.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (4431.3ms)
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (61.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (1.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (1116.5ms)
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 500 Internal Server Error in 8066ms (ActiveRecord: 3052.7ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/models/tag.rb:7:in `group_by'
+app/models/tag.rb:7:in `counts'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_127363840'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 500 Internal Server Error in 4370ms (ActiveRecord: 171.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/models/tag.rb:7:in `group_by'
+app/models/tag.rb:7:in `counts'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_127363840'
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:56:55 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (8.0ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (28.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (226.6ms)
+  [1m[36mUser Load (25.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 500 Internal Server Error in 622ms (ActiveRecord: 210.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `joins' for "tags.id, tags.name, count (taggings.tag_id) as count":String):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/models/tag.rb:8:in `counts'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_127607320'
+Started GET "/" for 127.0.0.1 at 2019-01-27 16:57:46 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (53.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 500 Internal Server Error in 423ms (ActiveRecord: 18.3ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/helpers/boards_helper.rb:3:in `sort_by'
+app/helpers/boards_helper.rb:3:in `tag_cloud'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_119044080'
+Started GET "/" for 127.0.0.1 at 2019-01-27 17:02:34 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (1.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (53.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 500 Internal Server Error in 584ms (ActiveRecord: 23.1ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/helpers/boards_helper.rb:3:in `sort_by'
+app/helpers/boards_helper.rb:3:in `tag_cloud'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_124150500'
+Started GET "/" for 127.0.0.1 at 2019-01-27 17:07:33 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (60.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 500 Internal Server Error in 492ms (ActiveRecord: 20.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/helpers/boards_helper.rb:3:in `sort_by'
+app/helpers/boards_helper.rb:3:in `tag_cloud'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_123140320'
+Started GET "/" for 127.0.0.1 at 2019-01-27 17:07:37 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (1099.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (59.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (3094.5ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 500 Internal Server Error in 5649ms (ActiveRecord: 2161.9ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/helpers/boards_helper.rb:3:in `sort_by'
+app/helpers/boards_helper.rb:3:in `tag_cloud'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_124466160'
+Started GET "/" for 127.0.0.1 at 2019-01-27 17:08:03 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (14.7ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 500 Internal Server Error in 408ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/helpers/boards_helper.rb:3:in `sort_by'
+app/helpers/boards_helper.rb:3:in `tag_cloud'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_127541980'
+Started GET "/" for 127.0.0.1 at 2019-01-27 17:10:52 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:6
+  [1m[36mTag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:38
+  Rendered boards/index.html.erb within layouts/application (72.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:55
+Completed 500 Internal Server Error in 469ms (ActiveRecord: 24.7ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    129: <div class="row">
+    130:   <div class="container">
+    131:     <div class="col-md-12">
+    132:       <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    133:         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    134:       <% end %>
+    135:     </div>
+  
+app/helpers/boards_helper.rb:3:in `sort_by'
+app/helpers/boards_helper.rb:3:in `tag_cloud'
+app/views/layouts/application.html.erb:132:in `_app_views_layouts_application_html_erb__841480443_126127180'

@@ -2,6 +2,9 @@ class Board < ApplicationRecord
 	mount_uploader :picture, PictureUploader
 	has_many :comments
 
+	has_many :taggings
+	has_many :tags, through: :taggings
+	
 	belongs_to :user
 
 
@@ -14,8 +17,7 @@ class Board < ApplicationRecord
 	end
 
 	#start tag
-	has_many :taggings
-	has_many :tags, through: :taggings
+
 
 	def all_tags
 		self.tags.map(&:name).join(', ')
@@ -25,7 +27,7 @@ class Board < ApplicationRecord
 		#Добавляем теги к посту
 		self.tags = names.split(',').map do |name|
 			#Ищеи тег по имени
-			Tag.where(name: name.strip).first_or_create
+			Tag.where(name: name.strip).first_or_create!
 		end
 	end
 end

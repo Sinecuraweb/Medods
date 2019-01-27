@@ -17,9 +17,6 @@ ActiveRecord::Schema.define(version: 2019_01_25_112901) do
 
   create_table "boards", force: :cascade do |t|
     t.string "title"
-    t.string "bio"
-    t.string "author"
-    t.string "tag"
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

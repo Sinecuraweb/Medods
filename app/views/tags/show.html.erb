@@ -1,0 +1,8 @@
+<h1> <%= @tag.name  %> </h1>
+
+<% if @tag.boards.empty? %>
+<h2> Объявление к тегу не найдено</h2>
+<% else %>
+	<%= render @tag.boards %>
+
+<% end %>
