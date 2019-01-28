@@ -1,67 +1,65 @@
-<p id="notice"><%= notice %></p>
+	<p id="notice alert aler-success"><%= notice %></p>
 
-<h1 class="text-center mb-5 mt-3  text-uppercase"> Доска объявлений</h1>
+	<h1 class="text-center mb-5 mt-3  text-uppercase"> Доска объявлений</h1>
+	<div class="row">
+		<!-- start item board -->
+		<% @boards.each do |board| %>
+		<div class="col-md-6">
+			<div class="card mb-3">
 
-<div class="row">
-<% @boards.each do |board| %>
+				<div class="card-header p-0">
+					<% if board.picture.url != nil %>
 
-<div class="col-md-6">
-	<div class="card mb-3">
+					<%= image_tag board.picture.url, :class => 'img-fluid' %>
 
-		<div class="card-header p-0">
-			<% if board.picture.url != nil %>
-
-			<%= image_tag board.picture.url, :class => 'img-fluid' %>
-
-			<% end %>
-		</div>
-    	<div class="card-body">
-    	
-    
-		    <h3><%= board.title %></h3>
-
-		    <p><%= truncate(board.body, length: 160, separator: ' ' )  %></p>
-
-		   
-
-  		</div>
-
-		<div class="card-footer">
-			 <%= link_to "Смотреть целиком", board, :class => 'btn btn-info btn-sm' %>
-
-		    <%= link_to "Редактировать", edit_board_path(board), :class => 'btn btn-warning btn-sm' %>
-
-		    <%= link_to "Удалить", board, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-dark btn-sm' %>
-
-				<div class="section mr-auto">
-
-					<%= raw board.tags.map(&:name).map{ |t| link_to t, tag_path(t), class: 'badge badge-primary' }.join(' ') %>
-
+					<% end %>
 				</div>
-		    <a href="#" class="badge badge-primary">Primary</a>
-		</div>
+		    	<div class="card-body">
+		    	
+		    
+				    <h3><%= board.title %></h3>
 
+				    <p><%= truncate(board.body, length: 160, separator: ' ' )  %></p>
+
+				    <span class="text-muted">
+				    	<span class="font-weight-bold">Автор: <%= board.author %></span> 
+
+				    </span>
+
+				   
+
+		  		</div>
+
+				<div class="card-footer">
+					 <%= link_to "Смотреть целиком", board, :class => 'btn btn-info btn-sm' %>
+
+				    <%= link_to "Редактировать", edit_board_path(board), :class => 'btn btn-warning btn-sm' %>
+
+				    <%= link_to "Удалить", board, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-dark btn-sm' %>
+
+						<div class="section mr-auto">
+
+							<%= raw board.tags.map(&:name).map{ |t| link_to t, tag_path(t), class: 'badge badge-success' }.join(' ') %>
+							
+						</div>
 		
+				</div>
 
+				
+
+			</div>
+		</div>
+		<% end %>
+
+		<!-- end item board -->
 	</div>
-  
-</div>
-<% end %>
 
-</div>
-
-<%= link_to 'Создать новое объявление', new_board_path, :class => 'mb-5 btn btn-lg btn-primary mt-5' %>
-
-
-</div>
+	<%= link_to 'Создать новое объявление', new_board_path, :class => 'mb-5 btn btn-lg btn-primary mt-5' %>
 
 
 
 
-<footer class="footer  bg-dark footer-dark mt-auto py-3 mt-5">
-  <div class="container">
-    <span class="text-muted">Как тебе такое, Илон? &#169; <span class="text-light"> 2019 </span> </span>
-  </div>
-</footer>
+
+
 
 

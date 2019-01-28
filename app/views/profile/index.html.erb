@@ -1,4 +1,15 @@
 
+
+
+
+
+
+
+
+
+
+
+
  <header class="header">
     <div class="container">
       <div class="teacher-name">
@@ -11,12 +22,21 @@
         </div>
         <div class="col-sm-3">
           <div class="button pull-right btn-lg">
-            <a href="#" class="btn btn-outline-success btn-block">Изменить профиль <i class="fa fa-pencil"></i></a>
+            <a href="/users/edit" class="btn btn-outline-success btn-block"> <i class="fa fa-pencil"></i> Изменить профиль </a>
+            
+
+            <!-- Почему это не работает ?? todo 3.1 -->
+            <%#= link_to "Изменить профиль ", new_registration_path, :class => "btn btn-outline-success btn-block" %>
+            
           </div>
         </div>
         </div>
       </div>
+      
 
+
+
+      
       <div class="row" style="margin-top:20px;">
         <div class="col-sm-3"> 
           <a href="#"> <img class="rounded-circle" src="//images.weserv.nl/?url=i.imgur.com/Md9jS0Ib.jpg" alt="Rick" ></a>

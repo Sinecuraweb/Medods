@@ -1,28 +1,37 @@
-<h1> Расширенный поиск объявлений</h1>
+<h3 class="mt-5 mb-4 "> Расширенный поиск объявлений</h3>
 
 <%= form_for @search, html: {class: "pure-form"} do |s| %>
 
 	<div class="field">
-		<%= s.label :keywords %> <br>
-		<%= s.text_field :keywords %> <br>
+		<%= s.label :keywords, :class => "col-form-label text-muted" %> <br>
+		<%= s.text_field :keywords, :class => "form-control" %> <br>
+	</div>
+
+
+	<div class="field">
+		<span class="text-muted">Часть содержимого объявления :</span> <br> 
+		<%#= s.label :body %> 
+		<%= s.text_area :body, :class => "form-control mt-2" %> <br>
 	</div>
 
 	<div class="field">
-		<%= s.label :tag %> <br>
-		<%= s.select :tag, options_for_select(@tags), :include_blank => true %> <br>
+		<span class="text-muted ">Выберите автора</span> <br>
+		<%#= s.label :author %> 
+		<%= s.select :author, options_for_select(@author), :include_blank => true, :class => "custom-checkbox form-check-input " %> <br>
 	</div>
 
 
 	
-	<div class="field">
-		<%= s.label :author %> <br>
-		<%= s.text_field :author %> <br>
-	</div>
+
 
  	<div class="actions">
- 		<%= s.submit "Найти ! !" , class: "btn btn-outline-warning" %>
+ 		<%= s.submit "Найти ! !" , class: "btn btn-outline-warning mt-5" %>
  	</div>
 
  <% end %>
 
  <p> <%= link_to 'Назад', board_path(1) %> </p>
+
+
+<div class="badge badge-danger"> TODO #2  НЕ РАБОТАЕТ ПОИСК ПО ОПИСАНИЮ</div>
+

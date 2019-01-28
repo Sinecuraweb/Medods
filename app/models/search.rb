@@ -7,8 +7,9 @@ class Search < ApplicationRecord
 
 		# А если добавлены условия то magic is here
 		boards = boards.where(["title LIKE ?", "%#{keywords}%"]) if keywords.present?
-		boards = boards.where(["tag LIKE ?",tag]) if tag.present?
-		boards = boards.where(["author LIKE ?", autor]) if author.present?
+		boards = boards.where(["body LIKE ?", "%#{keywords}%"]) if keywords.present?
+		#boards = boards.where(["body LIKE ?", body]) if body.present?
+		boards = boards.where(["author LIKE ?", author]) if author.present?
 
 
 		return boards

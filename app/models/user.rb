@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, -подтверждение по email
   # :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable,
-  		 :registerable,
+  		   :registerable,
          :recoverable,  #Восстановить пароль
          :rememberable, #Хранит сессию и сохраняет куки
          :validatable

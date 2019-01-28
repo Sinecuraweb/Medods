@@ -3,9 +3,9 @@ class BoardsController < ApplicationController
 
   # GET /boards.json
   def index
-    @boards = Board.all 
+    #@boards = Board.all 
 
-    #@boards = Board.search(params[:search])
+    @boards = Board.search(params[:search])
   end
 
   # GET /boards/1
@@ -65,7 +65,7 @@ class BoardsController < ApplicationController
   def destroy
     @board.destroy
     respond_to do |format|
-      format.html { redirect_to boards_url, notice: 'Board was successfully destroyed.' }
+      format.html { redirect_to boards_url, notice: 'Объявление успено удалено' }
       format.json { head :no_content }
     end
   end
@@ -78,6 +78,6 @@ class BoardsController < ApplicationController
 
     #All params
     def board_params
-      params.require(:board).permit(:title, :body, :picture, :all_tags)
+      params.require(:board).permit(:title, :body, :picture, :all_tags, :author)
     end
 end

@@ -4,7 +4,7 @@ class SearchesController < ApplicationController
 		@search = Search.new
 
 		#Выбираем объвление в определенном теге, но без дублирования
-		@tags = Board.pluck(:tag).uniq
+		@author = Board.pluck(:author).uniq
 	end
 
 	def create
@@ -20,7 +20,7 @@ class SearchesController < ApplicationController
 	#Доступ к параметрам по которым идет поиск
 	private
 	def search_params
-		params.require(:search).permit(:keywords, :autor, :title, :tag)
+		params.require(:search).permit(:keywords, :author, :title, :tag, :body)
 		
 	end
 

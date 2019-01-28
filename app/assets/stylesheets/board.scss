@@ -8,12 +8,29 @@ a:visited{
 	color: #fff !important
 }
 
+footer{
+	margin-top: 200px !important;
+}
+
 // LAZY =D
 
 div.mt-2 a:visited{
 	color:#3280e4 !important
 }
 
+.btn-outline-secondary:visited{
+	color: #000 !important;
+}
+
+
+
+.min-280{
+	min-height: 280px !important
+}
+
+.btn-outline-secondary:visited:hover{
+	color: #fff !important;
+}
 .btn-outline-danger:visited{
 	color: #777 !important
 }

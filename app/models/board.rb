@@ -2,6 +2,7 @@ class Board < ApplicationRecord
 	mount_uploader :picture, PictureUploader
 	has_many :comments
 
+	#has_belong_to_many
 	has_many :taggings
 	has_many :tags, through: :taggings
 	
@@ -13,6 +14,8 @@ class Board < ApplicationRecord
 		if search
 			where(["title LIKE ?", "%#{search}%"])
 
+		else
+			all
 		end
 	end
 

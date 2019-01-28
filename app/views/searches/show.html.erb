@@ -1,6 +1,6 @@
-<h1> Вот что удалось найти : </h1>
+<h3 class="mt-5"> Вот что удалось найти : </h3>
 
-<p> <%= link_to 'Back', new_search_path %> </p>
+
 
 <% if @search.search_boards.empty? %>
 <p> Вы ничего не нашли, попробуйте еще </p>
@@ -10,11 +10,13 @@
 	<% @search.search_boards.each do |c| %>
 	<br>
 
-	<div class="">
+<hr>
+	<div class="w-100">
 		
-		<h1><%= c.title %> </h1>
-		<p><strong>Автор :  </strong> <%= c.authbor %> </p>
-		<p><strong> TAG -) :  </strong> <%= c.tag %></p>
+		<h3><%= c.title %> </h3>
+		<p class="font-weight-normal"><strong>Автор : </strong> <%= c.author %> </p>
+		<p class="media-body font"><strong> Описание:  </strong> <%= c.body %> </p>
+
 
 	</div>
 	<% end %>
@@ -22,3 +24,4 @@
 <% end %>
 
 
+ <%= link_to 'Back', new_search_path, :class => "btn btn-warning" %> 

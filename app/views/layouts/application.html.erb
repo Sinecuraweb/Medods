@@ -1,147 +1,126 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tesla Project</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Tesla Project</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <!-- bootstrap css -->
-    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' %>
+  <!-- bootstrap css -->
+  <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' %>
 
-    <!-- font awesome -->
-    <script src="https://use.fontawesome.com/96da45865a.js"></script>
-
-
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
+  <!-- font awesome 4, not 5 version ) -->
+  <script src="https://use.fontawesome.com/96da45865a.js"></script>
 
 
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
+<body>
 
   <div class="container-fluid">
+    <header class="header">
+      <!--start  fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="/">Tesla DashBoard</a>
+        <a href="/" class="ml-3 mr-5">
+           <img src="/assets/logo2.png" width="50" height="50" class="d-inline-block align-top" alt="logo tesla"> 
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+              <span class="nav-link"><%= link_to "Добавить объявление", new_board_path %></span>
+            </li>
+            
+
+            <% if user_signed_in? %>
+            <li class="nav-item">
+              <span class="nav-link"><%= link_to "Мой профиль", profile_index_path %></span>
+            </li>
+            <% end %>
+
+          </ul>
     
+          <span class="text-light mr-5">
+            <% if user_signed_in? %>
+
+            Привет, <%= current_user.name %>  
+
+            
+            <%= link_to "Выйти", destroy_user_session_path, :method => :delete, :class => 'btn btn-outline-danger mr-2 ml-3' %>
+
+            <% else %>
+
+            <%= link_to "Войти" , new_user_session_path, :class => 'btn btn-outline-light'  %>
+
+
+            <% end %>
+
+          </span>
 
 
 
 
-  <header class="header">
-  <!-- Fixed navbar -->
+          <!-- start search -->
 
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <%= form_tag boards_path, :class => 'form-inline mt-2 mt-md-0', :method => 'get' do %>
 
-    <a class="navbar-brand" href="/">Tesla Sell</a>
+          <%= text_field_tag :search, params[:search], :class => "form-control mr-sm-2" %>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+          <%= submit_tag "search", :class => "btn btn-outline-success my-2 my-sm-0" %>
 
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-
-<!--         <li class="nav-item">
-
-         <span class="nav-link"><%= link_to "Главная", boards_path %></span>
-
-        </li>  -->
-
-        <li class="nav-item">
-          <span class="nav-link"><%= link_to "Добавить объявление", new_board_path %></span>
-        </li>
-        
-        <% if user_signed_in? %>
-
-        <li class="nav-item">
-          <span class="nav-link"><%= link_to "Мой профиль", profile_index_path %></span>
-        </li>
-
-        <% end %>
+          <% end %>
 
 
-      </ul>
-     
+          <span class="text-light ml-5">
+            <%= link_to "Расширенный поиск", new_search_path, :class => "btn btn-outline-info" %>
+          
+          </span>
+        </div>
+
+      </nav>
+      <!-- end fixed navbar -->
+    </header>
+  </div>   
 
 
-
-    
-      <span class="text-light mr-5">
-        <% if user_signed_in? %>
-
-        Привет, <%= current_user.email %>  
-        
-      
-        <%= link_to "Выйти", destroy_user_session_path, :method => :delete, :class => 'btn btn-outline-danger mr-2 ml-3' %>
-
-        <% else %>
-
-        <%= link_to "Войти" , new_user_session_path, :class => 'btn btn-outline-light'  %>
-
-
-        <% end %>
-        
-        </span>
-
-
-      
-      
-
-      <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
-      </form>
-
-    
-
-      <%= form_tag boards_path, :method => 'get' do %>
-
-        <%= text_field_tag :search, params[:search] %>
-
-        <%= submit_tag "search" %>
-
-      <% end %>
-      
-      <% link_to "Расширенный поиск", new_search_path %>
-
-
-
-    </div>
-  </nav>
-
-</header>
-
-</div>   
-  
-
-
-
-
-
-
-<div class="container">
-  <div class="row">
-    <%= yield %>
-  </div>
-</div>
-
-<div class="row">
   <div class="container">
-    <div class="col-md-12">
-      <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+    
+      <%= yield %>
+  
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
         <%= link_to tag.name, tag_path(tag.name), class: css_class %>
-      <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
 
 
-  </body>
+  
+<footer class="footer  bg-dark footer-dark py-3 ">
+  <div class="container">
+    <span class="text-muted">Как тебе такое, Илон? &#169; <span class="text-light"> 2019 </span> </span>
+  </div>
+</footer>
+
+
+</body>
 </html>
 
 <style type="text/css">
-  .header {
-    min-height: 60px !important;
-  }
+.header {
+  min-height: 60px !important;
+}
 </style>

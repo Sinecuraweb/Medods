@@ -1,8 +1,11 @@
-<p id="notice"><%= notice %></p>
+
+<% if notice != nil %>
+
+<p id="notice" class="mt-4 mb-4 alert alert-success"><%= notice %></p>
+<% end %>
 
 
-
-<div class="card mb-3">
+<div class="card mb-3 mt-4">
 
 	<%= image_tag @board.picture.url, :class => 'bd-placeholder-img card-img-top' %>
 
@@ -10,11 +13,24 @@
   <div class="card-body">
     <h5 class="card-title"><%= @board.title %></h5>
     <p class="card-text"><%= @board.body %></p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    <p class="card-text"><small class="text-muted">Автор:</small></p>
+    <span class="mr-2">Добавлено :</span><time><%= @board.created_at.to_date.strftime("%d %B, %Y") %></time>
+    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+    <p class="card-text mt-4"><small class="text-muted">Автор:</small> <%= @board.author %>  </p>
+
+
+    <div class="section ml-auto">
+
+      <%#= raw board.tags.map(&:name).map{ |t| link_to t, tag_path(t), class: 'badge badge-success' }.join(' ') %>
+
+    </div>
+    
   </div>
 
+
+
+
   <div class="card-footer">
+
   	<%= link_to 'Изменить объявление', edit_board_path(@board), :class => 'btn btn-warning' %> 
 	<%= link_to 'Все объявления', boards_path, :class => 'btn btn-primary' %>
   </div>
@@ -49,7 +65,7 @@
 
 <hr>
 
-<%= current_user&.email %>
+<%#= current_user&.email %>
 
 
 
