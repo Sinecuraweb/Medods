@@ -10,5 +10,7 @@ class UsersController < ApplicationController
 	  @user = User.find(params[:id])
 	  @lists = @user.lists
 	end
+
+	
 end
 

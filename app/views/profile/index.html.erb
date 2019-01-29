@@ -2,21 +2,13 @@
 
 
 
-
-
-
-
-
-
-
-
  <header class="header">
     <div class="container">
       <div class="teacher-name">
         <div class="row">
         <div class="col-sm-9">
           <h2><strong>
-             <%= current_user.email %>
+             <%= current_user.name %>
            
           </strong></h2>
         </div>
@@ -39,7 +31,22 @@
       
       <div class="row" style="margin-top:20px;">
         <div class="col-sm-3"> 
-          <a href="#"> <img class="rounded-circle" src="//images.weserv.nl/?url=i.imgur.com/Md9jS0Ib.jpg" alt="Rick" ></a>
+          <a href="#"> 
+
+
+  <!--           <img class="rounded-circle" src="//images.weserv.nl/?url=i.imgur.com/Md9jS0Ib.jpg" alt="Rick" > -->
+
+            <%= image_tag current_user.avatar.url, :class => 'rounded-circle' %>
+
+              <%# if user.picture.url != nil %>
+              <%#= image_tag @user.avatar.url, :class => 'rounded-circle' %>
+              <%# end %>
+
+
+
+
+          </a>
+
         </div>
 
         <div class="col-sm-6"> 
@@ -48,8 +55,10 @@
           <p><strong> Address: </strong> 123 Cuba str Tampa, Fl, Earth 137</p>
           <p><strong> Email: </strong> <%= current_user.email %> </p>
           <p><strong> Phone: </strong><%= current_user.phone %> </p>
-        </div>
 
+          
+        </div>
+        
         <div class="col-sm-3 text-center social">
           <!-- <span class="number">Phone:<strong>+0001732226402</strong></span> -->
 <!--           <div class="button-email">

@@ -1,5 +1,11 @@
-	<p id="notice alert aler-success"><%= notice %></p>
+	<% if notice != nil %>
 
+	<p id="notice" class="mt-4 mb-4 alert alert-success"><%= notice %></p>
+	<% end %>
+
+
+
+	
 	<h1 class="text-center mb-5 mt-3  text-uppercase"> Доска объявлений</h1>
 	<div class="row">
 		<!-- start item board -->

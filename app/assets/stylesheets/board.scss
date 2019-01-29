@@ -3,6 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+.r-50 {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: -10px;
+    display: inline-block;
+    img { width: 100% }
+}
+
+
 a:visited{
 
 	color: #fff !important
@@ -22,8 +40,15 @@ div.mt-2 a:visited{
 	color: #000 !important;
 }
 
+.btn-outline-info:visited{
+	color: #17a2b8 !important;
+}
 
 
+
+.btn-outline-info:visited:hover{
+	background-color: #000 !important;
+}
 .min-280{
 	min-height: 280px !important
 }

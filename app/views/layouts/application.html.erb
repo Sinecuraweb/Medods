@@ -48,10 +48,17 @@
 
           </ul>
     
-          <span class="text-light mr-5">
-            <% if user_signed_in? %>
+          <span class="text-light mr-5" style="position: relative;">
 
-            Привет, <%= current_user.name %>  
+            <% if user_signed_in? %>
+            <div class="r-50">
+                <%= image_tag(current_user.avatar.url(:thumb))%>
+            </div> 
+            Привет, <%= current_user.name %>
+
+
+          
+
 
             
             <%= link_to "Выйти", destroy_user_session_path, :method => :delete, :class => 'btn btn-outline-danger mr-2 ml-3' %>

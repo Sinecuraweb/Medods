@@ -61,17 +61,17 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super(resource)
   # end
 
+  
   protected
-
       # Мои доп. параметры для devise
       def configure_sign_up_params
           devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :phone])
-          params.require(:user).permit(:name, :email, :password, :phone)
+          params.require(:user).permit(:name, :email, :password, :phone, :avatar, :bio)
       end
 
 
       def configure_account_update_params
-          devise_parameter_sanitizer.permit(:account_update, keys: [:name, :phone])
-  end
+          devise_parameter_sanitizer.permit(:account_update, keys: [:name, :phone, :avatar, :bio])
+      end
 end
 

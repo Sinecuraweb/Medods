@@ -1,3 +1,4 @@
+<!-- old -->
  <h6 class="mt-5">Вы находитесь в режиме редактирования профиля, <%= current_user.name %></h6>
 
  <header class="header">
@@ -5,27 +6,26 @@
       <div class="teacher-name">
         <div class="row">
         <div class="col-sm-9">
+        
 
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
           <%= devise_error_messages! %>
 
+         <h4>Измените ваше имя:</h4>
+
+          <%= f.text_field :name, autofocus: true, autocomplete: "name",  :class => "form-control col-3" %>
 
 
-       <!-- Конец формы  -->
 
-
-
-
-          <h4>
-             Измените ваше имя:
-            
-         </h4>
-
-          <%= f.email_field :name, autofocus: true, autocomplete: "name",  :class => "form-control col-3" %>
         </div>
         <div class="col-sm-3">
           <div class="button pull-right btn-lg">
-            <a href="/users/edit" class="btn btn-outline-success btn-block"> <i class="fa fa-pencil"></i> Изменить профиль </a>
+            <!-- <a href="/users/edit" class="btn btn-outline-success btn-block"> <i class="fa fa-pencil"></i> Изменить профиль </a> -->
+            <div class="action">
+ 
+            </div>
+
+        
             
 
             <!-- Почему это не работает ?? todo 3.1 -->
@@ -42,50 +42,78 @@
       
       <div class="row" style="margin-top:20px;">
         <div class="col-sm-3"> 
-          <a href="#"> <img class="rounded-circle" src="//images.weserv.nl/?url=i.imgur.com/Md9jS0Ib.jpg" alt="Rick" ></a>
+
+
+
+<!--           <a href="#"> <img class="rounded-circle" src="//images.weserv.nl/?url=i.imgur.com/Md9jS0Ib.jpg" alt="Rick" ></a> -->
+          
+          <!-- start ava -->
+
+
+
+            <div class="form-group">
+               <%= f.label :avatar, class: 'col-sm-2 control-label'  %>
+               <div class="col-sm-6">
+                   <%= f.file_field :avatar %>
+               </div>
+            </div>
+
+        <!--   <div class="input-group mb-3 mt-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupFileAddon01">Выберите фото</span>
+            </div>
+            <div class="custom-file">
+              <%#= f.file_field :avatar, :class => 'custom-file-input' %>
+              <label class="custom-file-label" for="inputGroupFile01">Загрузить</label>
+            </div>
+          </div> -->
+
+          <!-- end ava -->
+
         </div>
 
         <div class="col-sm-6"> 
-          <!-- <h5>Associate Professor, <small>Dept. of Alien Agriculture</small></h5> -->
-          <!-- <p>PhD on Molecular Shwanky Physics</p> -->
-          <!-- <p><strong> Address: </strong> 123 Cuba str Tampa, Fl, Earth 137</p> -->
 
-           <div class="field">
-          
+
+          <p><strong> Email: </strong> 
             <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "form-control" %>
-          </div>
-          <!-- <p><strong> Email: </strong> <%= current_user.email %> </p> -->
+       
+   
+  
+          <p><strong> Телефон: </strong><%= f.text_field :phone, autofocus: true, autocomplete: "phone",  :class => "form-control" %>
 
-          <%= f.email_field :phone, autofocus: true, autocomplete: "phone",  :class => "form-control" %>
-          <!-- <p><strong> Phone: </strong><%= current_user.phone %> </p> -->
           
 
           <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
             <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
           <% end %>
 
+
+
           <div class="form-group">
-           <p><strong> Новый пароль   </strong> <i>(leave blank if you don't want to change it)</i> </p>
+           <p class="mb-0 pb-0"><strong> Новый пароль   </strong> <i>Если не хотите изменять, оставьте поле пустым</i> </p>
 
             <%= f.password_field :password, autocomplete: "new-password" , :class => "form-control" %>
 
             <% if @minimum_password_length %>
-              <em><%= @minimum_password_length %> символов мнимально</em>
+              <p class="mb-0 pb-0"><strong ><%= @minimum_password_length %> символов минимально </strong></p>
             <% end %>
           </div>
 
 
-
+          
           <div class="form-group">
-             <p><strong> Подтвердите пароль   </strong> </p>
-            <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+             <p class="mb-0 pb-0"><strong> Подтвердите пароль   </strong> </p>
+            <%= f.password_field :password_confirmation, autocomplete: "new-password", :class => "form-control" %>
           </div>
 
           <div class="form-group">
-            <p class="text-muted small">Ващ текущий пароль, оставьте пустым если не собираетесь изменять </p>
+            <p class="mb-0 pb-0"><strong>Ваш текущий пароль</strong></p>
             <%= f.password_field :current_password, autocomplete: "current-password", :class => "form-control" %>
           </div>
 
+                     <%= f.submit "Update" , :class => "btn btn-outline-warning btn-block" %>
+     <% end %>  
         </div>
 
         <div class="col-sm-3 text-center social">
@@ -135,11 +163,8 @@
         </div>
 
 
-          <div class="actions">
-            <%= f.submit "Update" %>
-          </div>
 
-         <% end %>  
+    
       </div>
   <div class="row">
     <div class="col-sm-12">
@@ -156,49 +181,6 @@
   </div>
 </div> 
 
+            <%= button_to "Удалить мой профиль", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, :class => "btn btn-outline-danger btn-block mt-3" %>
 
-
-<h2> <%#= resource_name.to_s.humanize %></h2>
-
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
-    <% end %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "current-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
-
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>
+            <%= link_to "Вернуться", :back, :class => "btn btn-outline-info btn-block mt-3" %>
