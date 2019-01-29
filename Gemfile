@@ -2,9 +2,16 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 
-
+ruby '2.5.3'
 gem 'paperclip'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+
+
+gem 'nokogiri'
+gem 'rack', '~> 2.0.1'
+gem 'rspec'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
@@ -70,4 +77,3 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-ruby '2.5.3'
