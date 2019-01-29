@@ -38095,3 +38095,115 @@ Processing by BoardsController#index as HTML
 Completed 200 OK in 54ms (Views: 48.9ms | ActiveRecord: 3.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-29 16:56:35 +0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/user-jnr/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:12
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 2]]
+  ↳ app/views/boards/index.html.erb:48
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:48
+  Rendered boards/index.html.erb within layouts/application (38.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:43
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY name, taggings.tag_id[0m
+  ↳ app/helpers/boards_helper.rb:3
+Completed 200 OK in 431ms (Views: 409.1ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 16:57:48 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:12
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 2]]
+  ↳ app/views/boards/index.html.erb:48
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:48
+  Rendered boards/index.html.erb within layouts/application (24.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:43
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY name, taggings.tag_id[0m
+  ↳ app/helpers/boards_helper.rb:3
+Completed 200 OK in 78ms (Views: 47.2ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 16:57:49 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:12
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 2]]
+  ↳ app/views/boards/index.html.erb:48
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:48
+  Rendered boards/index.html.erb within layouts/application (8.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:43
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY name, taggings.tag_id[0m
+  ↳ app/helpers/boards_helper.rb:3
+Completed 200 OK in 42ms (Views: 38.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/boards/new" for 127.0.0.1 at 2019-01-29 16:57:50 +0500
+Processing by BoardsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/boards_controller.rb:22
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/_form.html.erb (24.4ms)
+  Rendered boards/new.html.erb within layouts/application (25.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY name, taggings.tag_id[0m
+  ↳ app/helpers/boards_helper.rb:3
+Completed 200 OK in 59ms (Views: 55.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/profile/index" for 127.0.0.1 at 2019-01-29 16:57:52 +0500
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/profile/index.html.erb:11
+  Rendered profile/index.html.erb within layouts/application (7.1ms)
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY name, taggings.tag_id[0m
+  ↳ app/helpers/boards_helper.rb:3
+Completed 200 OK in 62ms (Views: 58.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 16:57:56 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:12
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 2]]
+  ↳ app/views/boards/index.html.erb:48
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:48
+  Rendered boards/index.html.erb within layouts/application (14.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY name, taggings.tag_id[0m
+  ↳ app/helpers/boards_helper.rb:3
+Completed 200 OK in 61ms (Views: 54.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-29 16:57:57 +0500
+Processing by BoardsController#index as HTML
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (3.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:12
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 2]]
+  ↳ app/views/boards/index.html.erb:48
+  [1m[36mTag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."board_id" = $1[0m  [["board_id", 1]]
+  ↳ app/views/boards/index.html.erb:48
+  Rendered boards/index.html.erb within layouts/application (20.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:43
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT name, count(taggings.tag_id) as count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" GROUP BY name, taggings.tag_id[0m
+  ↳ app/helpers/boards_helper.rb:3
+Completed 200 OK in 62ms (Views: 54.4ms | ActiveRecord: 5.7ms)
+
+
