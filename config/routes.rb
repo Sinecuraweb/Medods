@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   resources :searches 
 
   #actual root
-  #root to: 'boards#index' , as: 'home' # main page
+  root to: 'boards#index' , as: 'home' # main page
   resources :tags, only: [:show]
-	root 'boards#index'  # main page
+	#root 'boards#index'  # main page
 	get 'about' => 'pages#about' , as: 'about'
 	get 'profile' => 'pages#profile' , as: 'profile' #стр. профиля
 
