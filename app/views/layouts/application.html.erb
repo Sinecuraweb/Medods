@@ -25,10 +25,10 @@
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="/">Tesla DashBoard</a>
         <a href="/" class="ml-3 mr-5">
-           <!-- <img src="/assets/logo2.png" width="50" height="50" class="d-inline-block align-top" alt="logo tesla">  -->
-            <%= image_tag("/static/logo2.png", size: "50" , :class => "d-inline-block align-top") %>
+         <!-- <img src="/assets/logo2.png" width="50" height="50" class="d-inline-block align-top" alt="logo tesla">  -->
+         <%= image_tag("/static/logo2.png", size: "50" , :class => "d-inline-block align-top") %>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -47,33 +47,20 @@
             <% end %>
 
           </ul>
-    
+
           <span class="text-light mr-5" style="position: relative;">
 
             <% if user_signed_in? %>
             <div class="r-50">
-                <%= image_tag(current_user.avatar.url(:thumb))%>
+              <%= image_tag(current_user.avatar.url(:thumb))%>
             </div> 
             Привет, <%= current_user.name %>
-
-
-          
-
-
             
             <%= link_to "Выйти", destroy_user_session_path, :method => :delete, :class => 'btn btn-outline-danger mr-2 ml-3' %>
-
             <% else %>
-
             <%= link_to "Войти" , new_user_session_path, :class => 'btn btn-outline-light'  %>
-
-
             <% end %>
-
           </span>
-
-
-
 
           <!-- start search -->
 
@@ -82,26 +69,17 @@
           <%= text_field_tag :search, params[:search], :class => "form-control mr-sm-2" %>
 
           <%= submit_tag "search", :class => "btn btn-outline-success my-2 my-sm-0" %>
-
           <% end %>
-
-
           <span class="text-light ml-5">
             <%= link_to "Расширенный поиск", new_search_path, :class => "btn btn-outline-info" %>
-          
           </span>
         </div>
-
       </nav>
       <!-- end fixed navbar -->
     </header>
   </div>   
-
-
   <div class="container">
-    
-      <%= yield %>
-  
+    <%= yield %>
   </div>
 
   <div class="container">
@@ -113,16 +91,11 @@
       </div>
     </div>
   </div>
-
-
-  
-<footer class="footer  bg-dark footer-dark py-3 ">
-  <div class="container">
-    <span class="text-muted">Как тебе такое, Илон? &#169; <span class="text-light"> 2019 </span> </span>
-  </div>
-</footer>
-
-
+  <footer class="footer  bg-dark footer-dark py-3 ">
+    <div class="container">
+      <span class="text-muted">Как тебе такое, Илон? &#169; <span class="text-light"> 2019 </span> </span>
+    </div>
+  </footer>
 </body>
 </html>
 

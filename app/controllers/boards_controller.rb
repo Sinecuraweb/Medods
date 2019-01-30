@@ -4,7 +4,6 @@ class BoardsController < ApplicationController
   # GET /boards.json
   def index
     #@boards = Board.all 
-
     @boards = Board.search(params[:search])
   end
 

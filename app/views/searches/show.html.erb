@@ -1,27 +1,18 @@
 <h3 class="mt-5"> Вот что удалось найти : </h3>
-
-
-
 <% if @search.search_boards.empty? %>
 <p> Вы ничего не нашли, попробуйте еще </p>
-
 <% else %>
-
 	<% @search.search_boards.each do |c| %>
 	<br>
-
 <hr>
 	<div class="w-100">
 		
 		<h3><%= c.title %> </h3>
 		<p class="font-weight-normal"><strong>Автор : </strong> <%= c.author %> </p>
 		<p class="media-body font"><strong> Описание:  </strong> <%= c.body %> </p>
-
-
 	</div>
 	<% end %>
 
 <% end %>
-
 
  <%= link_to 'Back', new_search_path, :class => "btn btn-warning" %> 

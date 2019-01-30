@@ -1,77 +1,33 @@
-
 <% if notice != nil %>
-
 <p id="notice" class="mt-4 mb-4 alert alert-success"><%= notice %></p>
 <% end %>
-
-
 <div class="card mb-3 mt-4">
-
 	<%= image_tag @board.picture.url, :class => 'bd-placeholder-img card-img-top' %>
-
-
   <div class="card-body">
     <h5 class="card-title"><%= @board.title %></h5>
     <p class="card-text"><%= @board.body %></p>
     <span class="mr-2">Добавлено :</span><time><%= @board.created_at.to_date.strftime("%d %B, %Y") %></time>
-    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
     <p class="card-text mt-4"><small class="text-muted">Автор:</small> <%= @board.author %>  </p>
-
-
     <div class="section ml-auto">
-
-      <%#= raw board.tags.map(&:name).map{ |t| link_to t, tag_path(t), class: 'badge badge-success' }.join(' ') %>
-
     </div>
-    
   </div>
-
-
-
-
   <div class="card-footer">
-
   	<%= link_to 'Изменить объявление', edit_board_path(@board), :class => 'btn btn-warning' %> 
 	<%= link_to 'Все объявления', boards_path, :class => 'btn btn-primary' %>
   </div>
 </div>
-
 <hr>
-
-
 <h2>Все комментарии:</h2>
-
-
 <%= form_for([@board, @board.comments.build]) do |f| %>
-
-
-
-
     <%= f.label :user %>
     <%= f.text_field :username, {:class => 'form-control'} %>
-
-
-
     <%= f.label :comment %>
     <%= f.text_area :body, {:class => 'form-control' , :rows => '15'}  %>
-
     <!-- start pic -->
-
-  
-
     <%= f.submit("Отправить", {:class => 'btn btn-warning mt-4'}) %>
-
 <% end %>
 
 <hr>
-
-<%#= current_user&.email %>
-
-
-
-
-
-
 <% @board.comments.each do |comment| %>
 
 <div class="aler alert-light">
@@ -79,21 +35,11 @@
     <%= comment.username %> 
     </strong>
     : <%= comment.body %>
-
   </p>
 </div>
 
 <% end %>
-
-
-
-
 <%= link_to 'Назад', boards_path, :class => 'btn btn-outline-danger mt-3' %>
-
-
-
-
-
 
 <!-- todo #1.0 Прописать условие если не загружена картинка -->
 

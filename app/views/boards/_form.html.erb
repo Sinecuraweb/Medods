@@ -26,8 +26,8 @@
 <%= form.text_field :author, {:class => 'form-control'}  %>
 
 <!-- start mini baj(tag) -->
-  <%#= form.select :tag, options_for_select(@tags), :include_blank => true %>
-  <%# collection_select( :tag, :tag_id, Board.all, :id, :name, {}) %>
+<%#= form.select :tag, options_for_select(@tags), :include_blank => true %>
+<%# collection_select( :tag, :tag_id, Board.all, :id, :name, {}) %>
 
 
 <!-- end tags -->
@@ -49,29 +49,29 @@
         <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
       </div> -->
 
- <div class="class="mt-3 mb-3">
-   
+      <div class="class="mt-3 mb-3">
+       
 
-      <%#= @users.each do |user| ?!?!? %> 
-      <%#= Tag.all.each do |tag| %>
-         <%#= check_box_tag 'tag', tag.id, :class => 'custom-control-input' %>  
-         
-         <!-- <label class="custom-control-label" > -->
+        <%#= @users.each do |user| ?!?!? %> 
+        <%#= Tag.all.each do |tag| %>
+        <%#= check_box_tag 'tag', tag.id, :class => 'custom-control-input' %>  
+        
+        <!-- <label class="custom-control-label" > -->
 
           <%#= tag.name %>
           
-         <!-- </label> -->
-      <%# end %>
-  
+          <!-- </label> -->
+          <%# end %>
+          
 
 
-       <%#= check_box_tag '11', tag.name, :class => 'custom-control-input' %>  
-       
-    
-        <%#= label_tag(:tag_id, "alb") %>
+          <%#= check_box_tag '11', tag.name, :class => 'custom-control-input' %>  
+          
+          
+          <%#= label_tag(:tag_id, "alb") %>
 
 
-  </div>
+        </div>
 
 
         
@@ -80,7 +80,7 @@
         <%# tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
         
 
-       <%#= check_box_tag '11', tag.name, :class => 'custom-control-input' %>  
+        <%#= check_box_tag '11', tag.name, :class => 'custom-control-input' %>  
 
         <%#= row tag.name, tag_path(tag.name), :class => "btn btn-info btn-sm" %>
 
@@ -92,27 +92,27 @@
 
 
 
-<div class="form-group mt-3">
-  <%= form.label :'Все Теги' %> 
-  <span class="ml-4 text-muted small">
-  ( Перечислите через запятую <strong class="pt-4">"  ,  "  </strong> все новые теги, или отредактируйте существующие )
-</span>
-  <%= form.text_field :all_tags, class: 'form-control' %>
-</div>
+        <div class="form-group mt-3">
+          <%= form.label :'Все Теги' %> 
+          <span class="ml-4 text-muted small">
+            ( Перечислите через запятую <strong class="pt-4">"  ,  "  </strong> все новые теги, или отредактируйте существующие )
+          </span>
+          <%= form.text_field :all_tags, class: 'form-control' %>
+        </div>
 
-<!-- start pic -->
-<div class="input-group mb-3 mt-4">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroupFileAddon01">Выберите фото</span>
-  </div>
-  <div class="custom-file">
-    <%= form.file_field :picture, :class => 'custom-file-input' %>
-    <label class="custom-file-label" for="inputGroupFile01">Загрузить</label>
-  </div>
-</div>
-<!-- end pic -->
+        <!-- start pic -->
+        <div class="input-group mb-3 mt-4">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupFileAddon01">Выберите фото</span>
+          </div>
+          <div class="custom-file">
+            <%= form.file_field :picture, :class => 'custom-file-input' %>
+            <label class="custom-file-label" for="inputGroupFile01">Загрузить</label>
+          </div>
+        </div>
+        <!-- end pic -->
 
 
-<%= form.submit("Применить изменения", {:class => 'btn btn-success mt-4'}) %>
+        <%= form.submit("Применить изменения", {:class => 'btn btn-success mt-4'}) %>
 
-<% end %>
+        <% end %>
