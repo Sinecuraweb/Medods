@@ -1,9 +1,0 @@
-<h2> Добавим новое объявление</h2>
-
-<%= form_for :board, url: board_path do |f| %>
-	Название :<%= f.text_field :title %>
-	Описание объявления: <%= f.text_area :body %> <br>
-	<%= f.submit %>
-	</p>
-<% end %>	
-

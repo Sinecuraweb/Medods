@@ -9,4 +9,3 @@ class UsersController < ApplicationController
     @lists = @user.lists
   end
 end
-

@@ -12,7 +12,9 @@
     </div>
   </div>
   <div class="card-footer">
-  	<%= link_to 'Изменить объявление', edit_board_path(@board), :class => 'btn btn-warning' %> 
+    <% if user_signed_in? %>
+  	<%= link_to 'Изменить объявление', edit_board_path(@board), :class => 'btn btn-warning' %>
+    <% end %> 
 	<%= link_to 'Все объявления', boards_path, :class => 'btn btn-primary' %>
   </div>
 </div>

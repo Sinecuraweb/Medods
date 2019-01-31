@@ -1,7 +1,7 @@
 	<% if notice != nil %>
-
 	<p id="notice" class="mt-4 mb-4 alert alert-success"><%= notice %></p>
 	<% end %>
+
 	<h1 class="text-center mb-5 mt-3  text-uppercase"> Доска объявлений</h1>
 	<div class="row">
 		<!-- start item board -->
@@ -23,13 +23,16 @@
 				<div class="card-footer">
 					<%= link_to "Смотреть целиком", board, :class => 'btn btn-info btn-sm' %>
 
+					<% if user_signed_in? %>
 					<%= link_to "Редактировать", edit_board_path(board), :class => 'btn btn-warning btn-sm' %>
 
 					<%= link_to "Удалить", board, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-dark btn-sm' %>
+					<% end %>
+
 
 					<div class="section mr-auto">
-
-						<%= raw board.tags.map(&:name).map{ |t| link_to t, tag_path(t), class: 'badge badge-success' }.join(' ') %>
+					
+						<%= raw board.tags.map(&:name).map { |t| link_to t, tag_path(t), class: 'badge badge-success' }.join(' ') %>
 
 					</div>
 				</div>
@@ -38,5 +41,6 @@
 		<% end %>
 		<!-- end item board -->
 	</div>
-
+<% if user_signed_in? %>
 	<%= link_to 'Создать новое объявление', new_board_path, :class => 'mb-5 btn btn-lg btn-primary mt-5' %>
+<% end %>

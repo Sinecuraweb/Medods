@@ -35,7 +35,9 @@
           <ul class="navbar-nav mr-auto">
 
             <li class="nav-item">
+              <% if user_signed_in? %>
               <span class="nav-link"><%= link_to "Добавить объявление", new_board_path %></span>
+              <% end %>
             </li>
             
 
@@ -84,9 +86,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
-        <%= link_to tag.name, tag_path(tag.name), class: css_class %>
-        <% end %>
+
+
+        <%# tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5 }) do |tag, css_class| %>
+        <%#= link_to tag.name, tag_path(tag.name), class: "text-muted" %>
+        <%# end %>
+
       </div>
     </div>
   </div>

@@ -2,28 +2,26 @@
 class Board < ApplicationRecord
   mount_uploader :picture, PictureUploader
   has_many :comments
-  # Has_belong_to_many
-  has_many :taggings
-  has_many :tags, through: :taggings
+  #has_many :taggings
+  has_and_belongs_to_many :tags
   belongs_to :user
-  #start search
+  # start search
   def self.search(search)
     if search
-      where(["title LIKE ?", "%#{search}%"])
+      where(['title LIKE ?', "%#{search}%"])
     else
       all
     end
   end
-
-  #start tag
+  # start tag
   def all_tags
     self.tags.map(&:name).join(', ')
   end
 
   def all_tags=(names)
-    #Добавляем теги к посту
+    # Добавляем теги к посту
     self.tags = names.split(',').map do |name|
-    #Ищеи тег по имени
+    # Tag for name
       Tag.where(name: name.strip).first_or_create!
     end
   end
